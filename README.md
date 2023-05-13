@@ -24,7 +24,8 @@ Things you may want to cover:
 * ...
 
 # Todos
-- [ ] Add React
+- [x] Add React
+  - 
 - [ ] Script to format PDF manuscript as local data file with embeddings
 - [ ] Text box to receive question
 - [ ] Back-end that fetches most relevant embeddings using local data file
