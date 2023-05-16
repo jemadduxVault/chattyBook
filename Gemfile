@@ -51,6 +51,7 @@ gem "bootsnap", require: false
 gem "rack-cors"
 gem "pdf-reader"
 gem "ruby-openai"
+gem "pg"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
