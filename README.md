@@ -27,6 +27,6 @@ Things you may want to cover:
 - [x] Add React
 - [x] Text box to receive question
 - [x] Front-end that displays answer
-- [ ] Script to format PDF manuscript as local data file with embeddings
+- [x] Script to format PDF manuscript as local data file with embeddings
 - [ ] Back-end that fetches most relevant embeddings using local data file
 - [ ] Back-end that caches answers, otherwise hits OpenAI for answer
