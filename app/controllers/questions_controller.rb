@@ -6,10 +6,8 @@ class QuestionsController < ApplicationController
     @question = Question.create(question: user_question)
     @question.generate_embedding
 
-    answer = user_question
-    # Process the request and prepare the response
-    response = { message: answer }
-    render json: response
+    answer = AnswerQuestionService.call(@question)
+    render json: { message: answer }
   end
 
   private
