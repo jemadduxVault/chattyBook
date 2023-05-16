@@ -26,6 +26,8 @@ const Ask = () => {
   return (
     <div className="centered-container">
       <div className="centered-content">
+        <h1>Talk to Frankenstein!!!</h1>
+        <h6>(The book)</h6>
         <textarea
           rows={6}
           cols={50}
