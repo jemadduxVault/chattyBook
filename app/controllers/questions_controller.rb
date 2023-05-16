@@ -3,11 +3,12 @@ class QuestionsController < ApplicationController
   def create
     # Access the request parameters
     user_question = JSON.parse(request.body.read)["question"]
-    @question = Question.create(question: user_question)
-    @question.generate_embedding
-
-    answer = AnswerQuestionService.call(@question)
-    render json: { message: answer }
+    @question = Question.find_or_create_by(question: user_question)
+    unless @question.answer && @question.embedding
+      @question.generate_embedding
+      AnswerQuestionService.call(@question)
+    end
+    render json: { message: @question.reload.answer }
   end
 
   private

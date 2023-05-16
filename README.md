@@ -28,5 +28,5 @@ Things you may want to cover:
 - [x] Text box to receive question
 - [x] Front-end that displays answer
 - [x] Script to format PDF manuscript as local data file with embeddings
-- [ ] Back-end that fetches most relevant embeddings using local data file
-- [ ] Back-end that caches answers, otherwise hits OpenAI for answer
+- [x] Back-end that fetches most relevant embeddings using local data file
+- [x] Back-end that caches answers, otherwise hits OpenAI for answer
