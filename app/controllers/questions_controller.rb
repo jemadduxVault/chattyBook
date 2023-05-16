@@ -4,11 +4,11 @@ class QuestionsController < ApplicationController
   # POST /questions or /questions.json
   def create
     # Access the request parameters
-    request_params = JSON.parse(request.body.read)
+    question = JSON.parse(request.body.read)["question"]
 
+    answer = question
     # Process the request and prepare the response
-    response = { message: 'Hello from Rails!', data: request_params }
-
+    response = { message: answer }
     render json: response
   end
 

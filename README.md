@@ -25,7 +25,7 @@ Things you may want to cover:
 
 # Todos
 - [x] Add React
-- [ ] Text box to receive question
+- [x] Text box to receive question
 - [x] Front-end that displays answer
 - [ ] Script to format PDF manuscript as local data file with embeddings
 - [ ] Back-end that fetches most relevant embeddings using local data file
