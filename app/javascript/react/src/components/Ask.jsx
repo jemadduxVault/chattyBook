@@ -28,6 +28,7 @@ const Ask = () => {
       <div className="centered-content">
         <h1>Talk to Frankenstein!!!</h1>
         <h6>(The book)</h6>
+        <p>Question:</p>
         <textarea
           rows={6}
           cols={50}
@@ -36,7 +37,13 @@ const Ask = () => {
         />
         <br/>
         <button onClick={askQuestion}>Ask</button>
-        <p>Response: {response}</p>
+        <br/>
+        <p>Answer:</p>
+        <textarea
+          rows={6}
+          cols={50}
+          value={response}
+        />
       </div>
     </div>
   )
